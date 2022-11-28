@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+        <section>
+            <img src="image/logo.png" alt="logo">
+            <ul>
+                <li class="activate">БАНК</li>
+                <li>Бизнес</li>
+                <li>Инвестиция</li>
+                <li>Страхование</li>
+                <li>Мобайл</li>
+                <li>Путешествие</li>
+                <li>Развлечения</li>
+            </ul>
+            <button>Войти</button>
+        </section>
+        
+        <div class="container">
+        <h1>Конвертер валют онлайн</h1>
+        <div class="sections">
+        <div class="block-one">
+            <p>У меня есть </p>
+            <div class ="from">
+                <button class='usd' value='USD'>USD</button>
+                <button class='try' value='TRY' class="active">TRY</button>
+                <button class='eur' value='EUR'>EUR</button>
+                <button class='gbp' value='GBP'>GBP</button>
+            </div>
+            <div class="input-block">
+                <input class="number-one" oninput="limitZeros()" id='num' placeholder='0.00'>
+            <p class="text-left">1 USD = 18.609974 TRY</p>
+            </div>
+        </div>
+        <div class="block-two">
+            <p>Хочу приобрести </p>
+            <div class="to">
+                <button class='usd' value='USD' >USD</button>
+                <button class='try' value='TRY'>TRY</button>
+                <button class='eur' value='EUR' >EUR</button>
+                <button class='gbp' value='GBP' class="active">GBP</button> 
+            </div>
+            <div class="input-block">
+            <input class="number-two" id="ans" placeholder='0.00'>
+            <p class="text-right">1 TRY = 0.053735 USD</p>
+            
+        </div>
+        </div>
+        </div>
+        </div>    
+</body>
+<script src="https://unpkg.com/imask"></script>
+<script src="main.js"></script>
+</html>
+

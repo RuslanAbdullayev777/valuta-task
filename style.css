@@ -1,0 +1,162 @@
+body {
+    margin:0;
+    padding: 0;    
+}
+
+section{
+    padding: 1% 0;
+    background-color: rgba(245, 245, 246, 1);
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ul {
+    display: flex;
+    color: rgba(149, 155, 164, 1);
+    font-size: 1.2vw;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 55%;
+}
+li {
+    margin: 2%;
+    cursor: pointer;
+}
+li:hover {
+    color: black;
+}
+button {
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    border: none;
+    padding: 0.5% 1%;
+    font-size: 1.2vw;
+    cursor: pointer;
+
+}
+.activate {
+    color: black;
+}
+.container {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+}
+h1 {
+    font-weight: 700;
+    font-size: 3.2vw;
+}
+.sections {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.block-one,.block-two{
+    margin: 0 6vw;
+}
+ p {
+    color: rgba(149, 155, 164, 1);
+    font-size: 1.4vw;
+}
+.from, .to {
+    font-size: 1.3vw;
+
+}
+.from button, .to button {
+    border: 1px solid rgba(149, 155, 164, 1);
+    color: rgba(198, 198, 198, 1);
+    cursor: pointer;
+    margin: 0;
+    width: 6vw;
+    height: 3vw;
+    
+}
+.from button:hover {
+    background-color: rgba(131, 58, 224, 1);
+    border: 1px solid rgba(131, 58, 224, 1);
+}
+.to button:hover {
+    background-color: rgba(131, 58, 224, 1);
+    border: 1px solid rgba(131, 58, 224, 1);
+}
+.input-block {
+    width: 24vw;
+    background-color: white;
+    margin-top: 5%;
+    border: 1px solid rgba(149, 155, 164, 1);
+    padding: 2vw 0.4vw 1vw;
+    border-radius: 5px;
+}
+.input-block p{
+    margin:1vw 0 0 0;
+    font-size: 0.9vw;
+}
+input{
+    height: 70%;
+    width: 90%;
+    border: none;
+    outline: none;
+    font-size: 3.5vw;
+    font-weight: 700;
+}
+.active {
+    background-color: rgba(131, 58, 224, 1);
+    border: 1px solid rgba(131, 58, 224, 1);
+    color: white;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+@media screen and (max-width: 772px) and (min-width: 320px) {
+  section {
+    justify-content: space-between;
+    padding: 1%  5%;
+  }
+    .sections {
+        display: block;
+    }
+    ul {
+        display: none;
+    }
+    button {
+        font-size: 11px;
+    }
+    h1 {
+        font-size: 22px;
+    }
+    .container p {
+        font-size: 14px;
+    }
+    .sections {
+        flex-direction: column;
+    }
+    .block-one, .block-two{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin:0;
+    }
+    .input-block {
+        width: 280px;
+}
+.input-block p{
+    margin:1vw 0 0 0;
+    font-size: 12px;
+}
+    input{
+        font-size:33px;
+        font-weight: 700;
+        height: 65px;
+    }
+
+    .from button, .to button {
+        width: 70px;
+        height: 30px;
+        
+    }
+    } 
